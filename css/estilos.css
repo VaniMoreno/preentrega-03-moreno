@@ -1,0 +1,595 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+/* == Estilos INDEX ==*/
+
+/*estilos de header*/
+
+header{
+    background-color: #950107;
+    color: rgb(255, 255, 255);
+}
+
+.logo{
+    image-rendering: auto;
+    object-fit: initial;
+    display: flex;
+    align-self: flex-start;
+}
+
+.logo-menu{
+    image-rendering: auto;
+    object-fit: initial;
+    margin: 10px; 
+}
+
+.imagen-banner{
+    filter: brightness(0.7);
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    background: none;
+    color: whitesmoke;
+    border-color: none;
+    text-decoration: none;
+
+    
+}
+
+header nav ul li{
+    display: flex;
+    align-items: flex-end;
+    background-color: #cc373c;
+    padding: 5px;
+    border-radius: 15px;
+    color: whitesmoke;
+    border-color: none;
+    text-decoration: none;
+
+}
+
+.dropdown-menu{
+    background: none;
+    margin: 10px;
+    border-color: none;
+    color: azure;
+    text-decoration: none;
+}
+
+.dropdown-item{
+    background-color: #ff7d81;
+    border-radius: 15px;
+    color: rgb(36, 36, 36);
+    border-color: none;
+    text-decoration: none;
+}
+
+
+.banner{
+    image-rendering: auto;
+    object-fit: initial;
+    width: 100%;
+    height: 800%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.titulo{
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+.parrafo-uno{
+    padding: 10px;
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(245, 245, 220, 0.394);
+}
+
+
+
+/*estilos del Main*/
+
+main h2 p {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+.bloque-uno{
+    align-items: center;
+    text-align: center;
+}
+
+.titulo-inicio{
+    margin-top: 30px;
+
+}
+
+.parrafo-inicio{
+    padding: 15px 40px 80px 100px;
+}
+
+.imagen-inicio{
+    margin-top: 60px;
+    image-rendering: auto;
+    object-fit: initial;
+    width: 40%;
+    height: 40%;
+    border-radius: 15px;
+    align-items: center;
+
+
+}
+.titulo-galeria{
+    margin: 30px;
+    text-align: center;
+
+}
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.galeria-individual{
+    margin: 15px;
+    padding: 15px;
+    width: 25%;
+    text-align: center;
+    border-radius: 20px;
+    border-color: rgba(103, 103, 103, 0.523);
+    background-color: rgba(103, 103, 103, 0.523);
+    box-shadow: 15px;
+}
+
+.imagen-valoracion{
+    margin: 15px;
+    padding: 15px;
+}
+
+.titulo-valoracion{
+    margin-bottom: 10 px;
+}
+
+.texto-valoracion{
+    margin: 10px;
+}
+
+.valoracion{
+    margin: 15px;
+}
+
+/* Inicio Pantallas Mobile*/
+
+@media screen and (min-width : 320px) and (max-width : 768px) {
+
+
+    
+        .imagen-inicio{
+            width: 300px;
+        }
+    
+    
+        .titulo-galeria{
+            margin: 30px;
+            text-align: center;
+        
+        }
+        
+        .galeria{
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            display: grid;
+            grid-template-columns: 0.8fr;
+            grid-template-rows: 0.8fr;
+            align-content: center;
+            
+        }
+       
+        
+        .galeria-individual{
+            margin: 15px;
+            padding: 15px;
+            width: 20rem;
+            text-align: center;
+            border-radius: 10px;
+            border-color: rgba(103, 103, 103, 0.523);
+            background-color: rgba(103, 103, 103, 0.523);
+            box-shadow: 15px;
+            align-items: center;
+        }
+    
+        .imagen-valoracion{
+            width: 250px;
+    
+        }
+    
+    
+    
+    }
+
+    /* Inicio Pantallas Tablet*/
+
+@media screen and (min-width : 768px) and (max-width : 1028px) {
+
+
+    .titulo-galeria{
+        margin: 30px;
+        text-align: center;
+    
+    }
+    
+    .galeria{
+        margin-left: 10rem;
+        margin-right: 10rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    
+    .galeria-individual{
+        margin: 15px;
+        padding: 15px;
+        width: 30rem;
+        text-align: center;
+        border-radius: 20px;
+        border-color: rgba(103, 103, 103, 0.523);
+        background-color: rgba(103, 103, 103, 0.523);
+        box-shadow: 15px;
+        align-items: center;
+    }
+
+}
+
+/* == Estilos Recetas ==*/
+
+.titulo-recetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.recetas{
+    margin-top: 80px;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes animation {
+    from {
+        position: relative;
+        bottom: -30px;
+        opacity: 0;
+    }
+
+    to {
+        position: relative;
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+
+
+.descripcion-recetas{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+}
+
+
+.card{
+    margin: 15px;
+    max-width: 50%;
+    padding: 15px;
+    width: 25%;
+    text-align: center;
+    border-radius: 20px;
+    border-color: rgba(249, 114, 93, 0.523);
+    background-color: rgba(249, 114, 93, 0.523);
+    box-shadow: 15px;
+
+    animation-name: entrada;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes entrada {
+    
+    from{
+        bottom: 0%;
+    }
+
+    to{
+        top: 80%;
+    }
+
+}
+
+
+
+
+.card{
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 20px;
+    border-color: rgba(249, 114, 93, 0.523);
+    background-color: rgba(249, 114, 93, 0.523);
+    box-shadow: 15px;
+}
+
+
+
+
+/* Recetas Pantallas Tablet*/
+@media screen and (min-width : 768px) and (max-width : 1028px) {
+
+
+    .titulo-recetas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 60px;
+    }
+
+    .recetas{
+        margin-top: 40px;
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+    }
+    .card{
+        margin: 15px;
+        padding: 15px;
+        text-align: center;
+        border-radius: 20px;
+        border-color: rgba(249, 114, 93, 0.523);
+        background-color: rgba(249, 114, 93, 0.523);
+        box-shadow: 15px;
+    }
+
+    .descripcion-recetas{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        padding-left: 90px;
+        padding-right: 90px;
+        text-align: center;
+    }
+    
+
+}
+
+/* Recetas Pantallas Mobile*/
+
+@media screen and (min-width : 320px) and (max-width : 768px) {
+
+    .titulo-recetas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .recetas{
+        margin-top: 20px;
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+    }
+    .card{
+        margin: 15px;
+        padding: 20px;
+        text-align: center;
+        border-radius: 20px;
+        border-color: rgba(249, 114, 93, 0.523);
+        background-color: rgba(249, 114, 93, 0.523);
+        box-shadow: 15px;
+    }
+
+    .descripcion-recetas{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        padding-left: 80px;
+        padding-right: 80px;
+        text-align: center;
+    }
+    
+
+}
+
+
+
+
+/* == Estilos Receta individual ==*/
+
+.imagen-receta-unica{
+    display: block;
+    margin: auto;
+}
+
+.receta-unica{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.titulo-receta-uno{
+    margin: 15px;
+    color: #950107;
+}
+
+.parrafo-receta-uno{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.lista-ingredientes{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+
+
+}
+
+.pasos-receta{
+    margin: 20px;
+    padding-left: 30%;
+    padding-right: 30%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.boton-hacer-receta{
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #950107;
+    border-color: none;
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+}
+
+
+/* == Estilos Nosotros ==*/
+
+.pregunta{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.preguntas{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 1fr;
+    margin: auto;
+}
+
+.imagen-pregunta{
+    border-radius: 20px;
+}
+
+.pregunta-uno{
+    margin: 20px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: auto;
+    align-items: center;
+
+
+}
+
+.pregunta-dos{
+    margin: 20px;
+    padding: 10px;    
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: auto;
+    align-items: center;
+    
+
+
+}
+
+.pregunta-tres{
+    margin: 20px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: auto;
+    align-items: center;
+
+}
+
+
+
+/* == Estilos Contacto ==*/
+/*Estilos Contacto*/
+
+.contenedor-contacto{
+    background-image: url(../img/fondo-contacto.png);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.titulo-contacto{
+    margin: 30px;
+    text-align: center;
+    color: #950107;
+    font-size: 50px;
+
+}
+
+.contacto{
+    margin: auto;
+    text-align: left;
+    width: 60%;
+    background-color: whitesmoke;
+}
+
+.campo{
+    margin: 15px;
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+}
+
+.etiqueta-campo{
+    margin: 10px;
+}
+
+.boton-contacto{
+    margin: 10px;
+}
+
+/*Estilos del Footer*/
+
+footer{
+    margin-top: 300px;
+    padding: 50px;
+    color: white;
+    background-color: #cc373c;
+}
+
+
+
+
