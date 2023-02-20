@@ -1,6 +1,24 @@
 /*Estilos Index*/
 
 
+body{
+    section{
+        div{
+           .carousel-inner{
+            .carousel-item{
+                img{
+                    filter: brightness(0.7);
+                }
+                div{
+                    p{
+                        font-size: x-large;
+                    }
+                }
+            }
+           }
+        }
+    }
+}
 
 .main-inicio{
     display: inline-block;
@@ -18,8 +36,11 @@
                 border-radius: 15px;
                 align-items: center;
             }
-            h2{
+            h3{
                 margin-top: 30px;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: $color-principal;
             }
             p{
                 padding: 15px 40px 80px 100px;
@@ -27,9 +48,12 @@
     }
 
     .titulo-galeria{
-        h2{
+        h3{
             margin: 30px;
             text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $color-principal;
         }
     }  
     .galeria{

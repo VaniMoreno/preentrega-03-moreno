@@ -140,6 +140,12 @@
   align-items: center; }
 
 /*Estilos Index*/
+body section div .carousel-inner .carousel-item img {
+  filter: brightness(0.7); }
+
+body section div .carousel-inner .carousel-item div p {
+  font-size: x-large; }
+
 .main-inicio {
   display: inline-block;
   vertical-align: top;
@@ -155,13 +161,19 @@
       height: 40%;
       border-radius: 15px;
       align-items: center; }
-    .main-inicio section h2 {
-      margin-top: 30px; }
+    .main-inicio section h3 {
+      margin-top: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #950107; }
     .main-inicio section p {
       padding: 15px 40px 80px 100px; }
-  .main-inicio .titulo-galeria h2 {
+  .main-inicio .titulo-galeria h3 {
     margin: 30px;
-    text-align: center; }
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #950107; }
   .main-inicio .galeria {
     display: flex;
     justify-content: center; }
