@@ -155,7 +155,7 @@ body section div .carousel-inner .carousel-item div p {
     text-align: center; }
     .main-inicio section img {
       margin-top: 60px;
-      image-rendering: auto;
+      image-rendering: 40%;
       object-fit: initial;
       width: 40%;
       height: 40%;
@@ -174,9 +174,34 @@ body section div .carousel-inner .carousel-item div p {
     text-transform: uppercase;
     font-weight: bold;
     color: #950107; }
+    @media screen and (min-width: 768px) and (max-width: 1028px) {
+      .main-inicio .titulo-galeria h3 {
+        margin: 30px;
+        text-align: center; } }
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+      .main-inicio .titulo-galeria h3 {
+        margin: 30px;
+        text-align: center; } }
   .main-inicio .galeria {
     display: flex;
     justify-content: center; }
+    @media screen and (min-width: 768px) and (max-width: 1028px) {
+      .main-inicio .galeria {
+        margin-left: 10rem;
+        margin-right: 10rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-content: space-between; } }
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+      .main-inicio .galeria {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        display: grid;
+        grid-template-columns: 0.8fr;
+        grid-template-rows: 0.8fr;
+        align-content: center; } }
     .main-inicio .galeria div {
       margin: 15px;
       padding: 15px;
@@ -186,9 +211,36 @@ body section div .carousel-inner .carousel-item div p {
       border-color: rgba(103, 103, 103, 0.523);
       background-color: rgba(103, 103, 103, 0.523);
       box-shadow: 15px; }
+      @media screen and (min-width: 768px) and (max-width: 1028px) {
+        .main-inicio .galeria div {
+          margin: 15px;
+          padding: 15px;
+          width: 30rem;
+          text-align: center;
+          border-radius: 20px;
+          border-color: rgba(103, 103, 103, 0.523);
+          background-color: rgba(103, 103, 103, 0.523);
+          box-shadow: 15px;
+          align-items: center; } }
+      @media screen and (min-width: 320px) and (max-width: 768px) {
+        .main-inicio .galeria div {
+          margin: 15px;
+          padding: 15px;
+          width: 20rem;
+          text-align: center;
+          border-radius: 10px;
+          border-color: rgba(103, 103, 103, 0.523);
+          background-color: rgba(103, 103, 103, 0.523);
+          box-shadow: 15px;
+          align-items: center; } }
       .main-inicio .galeria div img {
         margin: 15px;
-        padding: 15px; }
+        padding: 15px;
+        width: 18rem;
+        border-radius: 20%; }
+        @media screen and (min-width: 320px) and (max-width: 768px) {
+          .main-inicio .galeria div img {
+            width: 250px; } }
       .main-inicio .galeria div h4 {
         margin-bottom: 10px; }
       .main-inicio .galeria div p {
