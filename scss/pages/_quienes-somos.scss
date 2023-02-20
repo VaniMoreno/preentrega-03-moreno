@@ -1,2 +1,21 @@
 /* Estilos Quienes somos*/
 
+.main-nosotros{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    section{
+        .pregunta-nosotros{
+            margin: 20px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 40% 20% 40%;
+            grid-template-rows: auto;
+            align-items: center;
+            img{
+                border-radius: 20px;
+            }
+        }
+    }
+
+}

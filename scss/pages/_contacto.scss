@@ -1,0 +1,44 @@
+/*Estilos Contacto*/
+
+.contenedor-contacto{
+    background-image: url(../img/fondo-contacto.png);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main-contacto{
+    h1{
+        margin: 30px;
+        text-align: center;
+        color: $color-principal;
+        font-size: 50px;
+    }
+    form{
+        fieldset{
+            margin: auto;
+            padding: 3%;
+            text-align: left;
+            width: 60%;
+            background-color: $color-transparencia;
+            border-radius: 3rem;
+            div{
+                label{
+                    margin: 10px;
+                    input{
+                        margin: 15px;
+                        width: 30%;
+                        padding: 10px;
+                        border-radius: 5px;
+                        font-size: 18px;
+                        outline: none;
+                    }
+                }
+            }
+            div{
+                input{
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,51 @@
 @charset "UTF-8";
 /* Estilos Quienes somos*/
+.main-nosotros {
+  margin: 30px;
+  display: flex;
+  flex-direction: column; }
+  .main-nosotros section .pregunta-nosotros {
+    margin: 20px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: auto;
+    align-items: center; }
+    .main-nosotros section .pregunta-nosotros img {
+      border-radius: 20px; }
+
+/*Estilos Contacto*/
+.contenedor-contacto {
+  background-image: url(../img/fondo-contacto.png);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.main-contacto h1 {
+  margin: 30px;
+  text-align: center;
+  color: #950107;
+  font-size: 50px; }
+
+.main-contacto form fieldset {
+  margin: auto;
+  padding: 3%;
+  text-align: left;
+  width: 60%;
+  background-color: rgba(249, 114, 93, 0.656);
+  border-radius: 3rem; }
+  .main-contacto form fieldset div label {
+    margin: 10px; }
+    .main-contacto form fieldset div label input {
+      margin: 15px;
+      width: 30%;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 18px;
+      outline: none; }
+  .main-contacto form fieldset div input {
+    margin: 10px; }
+
 /*Estilos Recetas */
 .main-recetas div h1 {
   display: flex;
