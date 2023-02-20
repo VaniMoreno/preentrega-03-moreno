@@ -1,0 +1,57 @@
+/*Estilos Recetas */
+
+.main-recetas{
+    div{
+        h1{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 80px;   
+        }
+        .descripcion-recetas{
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+            padding-left: 150px;
+            padding-right: 150px;
+            text-align: center;
+        }
+    }
+    .recetas{
+        margin-top: 80px;
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        animation-name: animation;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+    }
+    
+    @keyframes animation {
+        from {
+            position: relative;
+            bottom: -30px;
+            opacity: 0;
+        }
+    
+        to {
+            position: relative;
+            bottom: 0;
+            opacity: 1;
+        }
+
+        }
+        .card{
+            margin: 15px;
+            max-width: 50%;
+            padding: 15px;
+            width: 25%;
+            text-align: center;
+            border-radius: 20px;
+            border-color: rgba(249, 114, 93, 0.523);
+            background-color: rgba(249, 114, 93, 0.523);
+            box-shadow: 15px;
+        
+        }
+    }
+

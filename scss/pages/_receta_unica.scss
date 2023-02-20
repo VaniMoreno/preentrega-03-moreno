@@ -1,0 +1,64 @@
+/*Estilos receta única*/
+
+.main-recetaindv{
+    .receta-unica{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        div{
+            .imagen-receta-unica{
+                display: block;
+                margin: auto;
+            }
+            h2{
+                margin: 15px;
+                color: $color-principal;
+            }
+            p{
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+        }
+    }
+    .lista-ingredientes{
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .pasos-receta{
+
+                    margin: 20px;
+                    padding-left: 30%;
+                    padding-right: 30%;
+                    display: flex;
+                    justify-content: center;
+                    text-align: left;
+                    ol{
+                        ul{
+                            font-weight:bold;
+                            text-align: center;
+                        }
+                        .ul-nota{
+                            font-style: italic;
+                            font-weight: lighter;
+                            text-align: center;
+                        }
+                    }
+                }
+        div{
+            button{
+                margin: 15px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 10px;
+                border-radius: 15px;
+                background-color: #950107;
+                border-color: none;
+                color: antiquewhite;
+                display: flex;
+                align-items: center;
+            }
+        }
+}
+        

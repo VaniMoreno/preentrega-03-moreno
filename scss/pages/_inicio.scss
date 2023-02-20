@@ -1,0 +1,59 @@
+/*Estilos Index*/
+
+
+
+.main-inicio{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    section{
+            align-items: center;
+            text-align: center;
+            img{
+                margin-top: 60px;
+                image-rendering: auto;
+                object-fit: initial;
+                width: 40%;
+                height: 40%;
+                border-radius: 15px;
+                align-items: center;
+            }
+            h2{
+                margin-top: 30px;
+            }
+            p{
+                padding: 15px 40px 80px 100px;
+            }
+    }
+
+    .titulo-galeria{
+        h2{
+            margin: 30px;
+            text-align: center;
+        }
+    }  
+    .galeria{
+        display: flex;
+        justify-content: center;
+        div{
+            margin: 15px;
+            padding: 15px;
+            width: 25%;
+            text-align: center;
+            border-radius: 20px;
+            border-color: rgba(103, 103, 103, 0.523);
+            background-color: rgba(103, 103, 103, 0.523);
+            box-shadow: 15px;
+            img{
+                margin: 15px;
+                padding: 15px;
+            }
+            h4{
+                margin-bottom: 10px;
+            }
+            p{
+                margin: 10px;
+            }
+        }
+    }
+}
