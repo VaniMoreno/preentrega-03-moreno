@@ -1,18 +1,19 @@
 @charset "UTF-8";
 /* Estilos Quienes somos*/
-.main-nosotros {
-  margin: 30px;
-  display: flex;
-  flex-direction: column; }
-  .main-nosotros section .pregunta-nosotros {
-    margin: 20px;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 40% 20% 40%;
-    grid-template-rows: auto;
-    align-items: center; }
-    .main-nosotros section .pregunta-nosotros img {
-      border-radius: 20px; }
+.main-nosotros section .pregunta-nosotros {
+  margin: 20px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  grid-template-rows: auto;
+  align-items: center; }
+  @media screen and (min-width: 768px) and (max-width: 1028px) {
+    .main-nosotros section .pregunta-nosotros {
+      display: flex;
+      flex-direction: column;
+      margin: 5rem; } }
+  .main-nosotros section .pregunta-nosotros img {
+    border-radius: 20px; }
 
 /*Estilos Contacto*/
 .contenedor-contacto {
@@ -51,7 +52,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 80px; }
+  margin-top: 80px;
+  color: #950107; }
   @media screen and (min-width: 768px) and (max-width: 1028px) {
     .main-recetas div h1 {
       display: flex;
@@ -85,8 +87,8 @@
       display: flex;
       justify-content: center;
       margin-top: 15px;
-      padding-left: 80px;
-      padding-right: 80px;
+      padding-left: 40px;
+      padding-right: 40px;
       text-align: center; } }
 
 .main-recetas .recetas {
