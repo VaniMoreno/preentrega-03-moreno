@@ -1,5 +1,9 @@
 /*Estilos receta única*/
 
+@import "../utilidades/extend";
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
 .main-recetaindv{
     .receta-unica{
         display: flex;
