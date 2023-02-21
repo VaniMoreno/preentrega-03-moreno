@@ -9,6 +9,13 @@
             .imagen-receta-unica{
                 display: block;
                 margin: auto;
+
+                @include tablet{
+                    max-width: 30rem;
+                }
+                @include mobile {
+                    max-width: 20rem;
+                }
             }
             h2{
                 margin: 15px;
@@ -25,6 +32,10 @@
         display: flex;
         justify-content: center;
         text-align: center;
+
+        @include tablet{
+            margin: 10px;
+        }
     }
     .pasos-receta{
 
@@ -34,6 +45,16 @@
                     display: flex;
                     justify-content: center;
                     text-align: left;
+
+                    @include tablet{
+                        padding-left: 10%;
+                        padding-right: 10%;
+                    }
+
+                    @include mobile{
+                        padding-left: 2%;
+                        padding-right: 2%;
+                    }
                     ol{
                         ul{
                             font-weight:bold;

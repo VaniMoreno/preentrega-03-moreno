@@ -226,6 +226,12 @@
   .main-recetaindv .receta-unica div .imagen-receta-unica {
     display: block;
     margin: auto; }
+    @media screen and (min-width: 768px) and (max-width: 1300px) {
+      .main-recetaindv .receta-unica div .imagen-receta-unica {
+        max-width: 30rem; } }
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+      .main-recetaindv .receta-unica div .imagen-receta-unica {
+        max-width: 20rem; } }
   .main-recetaindv .receta-unica div h2 {
     margin: 15px;
     color: #950107; }
@@ -238,6 +244,9 @@
   display: flex;
   justify-content: center;
   text-align: center; }
+  @media screen and (min-width: 768px) and (max-width: 1300px) {
+    .main-recetaindv .lista-ingredientes {
+      margin: 10px; } }
 
 .main-recetaindv .pasos-receta {
   margin: 20px;
@@ -246,6 +255,14 @@
   display: flex;
   justify-content: center;
   text-align: left; }
+  @media screen and (min-width: 768px) and (max-width: 1300px) {
+    .main-recetaindv .pasos-receta {
+      padding-left: 10%;
+      padding-right: 10%; } }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .main-recetaindv .pasos-receta {
+      padding-left: 2%;
+      padding-right: 2%; } }
   .main-recetaindv .pasos-receta ol ul {
     font-weight: bold;
     text-align: center; }
