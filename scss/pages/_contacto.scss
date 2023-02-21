@@ -5,6 +5,14 @@
     background-size: 120%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    @include tablet{
+        background-size: 200%;
+    }
+    @include mobile{
+        background-size: 150%;
+        background-repeat: repeat-y;
+    }
 }
 .main-contacto{
     h1{
@@ -21,13 +29,26 @@
             width: 60%;
             background-color: $color-transparencia;
             border-radius: 3rem;
+            align-items: center;
+            legend{
+                text-align: center;
+                @include tablet{
+                    font-size: large;
+                }
+                @include mobile{
+                    font-size: medium;
+                    margin: 1rem;
+                    width: 100%;
+                    padding: 2%;
+                }
+            }
             div{
                 label{
                     margin: 10px;
                     input{
                         margin: 15px;
                         width: 30%;
-                        padding: 10px;
+                        padding: 20px;
                         border-radius: 5px;
                         font-size: 18px;
                         outline: none;
@@ -36,7 +57,33 @@
             }
             div{
                 input{
-                    margin: 10px;
+                    display: flex;
+                    flex-wrap:wrap;
+                    width: 30rem;
+                    height: 2rem;
+
+                    @include tablet{
+                        display: flex;
+                        flex-wrap:wrap;
+                        width: 20rem;
+                        height: 2rem;
+                    }
+                    @include mobile{
+                        display: flex;
+                        flex-wrap:wrap;
+                        width: 10rem;
+                        height: 2rem;
+                    }
+                }
+                .campo-msje{
+                    height: 4rem;
+
+                }
+                .boton-contacto{
+                    margin: 1rem;
+                    width: fit-content;
+                    justify-items: center;
+                    padding: 0.2rem;
                 }
             }
         }
