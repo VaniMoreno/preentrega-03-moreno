@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/VaniMoreno/preentrega-03-moreno#readme",
   "devDependencies": {
+    "install": "^0.13.0",
     "node-sass": "^8.0.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "npm": "^9.5.0"
   },
   "dependencies": {
     "abbrev": "^1.1.1",

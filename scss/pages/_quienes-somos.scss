@@ -26,22 +26,33 @@
                 border-radius: 20px;
 
                 @include tablet{
-                    margin: 2rem;
+                    margin: 1rem;
+                }
+                @include mobile{
+                    max-width: 25rem;
+                    margin: 0.5rem;
                 }
 
             }
             h2{
-                color: $colorprincipal;
 
                 @include tablet{
                     margin: 25px;
+                }
+                @include mobile{
+                    margin: 0.5rem;
                 }
             }
             p{
                 @include tablet{
                     align-content: center;
                     text-align: center;
-                    margin: 5rem;
+                    margin: 1rem;
+                }
+                @include mobile{
+                    align-content: center;
+                    text-align: center;
+                    margin: 1rem;
                 }
             }
         }
